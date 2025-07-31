@@ -26,6 +26,7 @@
     /* Estilo para Aetheris Group */
     .aetheris-group {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh; /* Ocupa toda la altura de la ventana */
@@ -49,6 +50,13 @@
       animation: fadeInUp 1.5s ease-out;
     }
 
+    .logo {
+      margin-bottom: 30px; /* Espacio entre el logo y el título */
+      width: 150px; /* Tamaño del logo */
+      height: auto;
+      animation: fadeInUp 2s ease-out; /* Animación del logo */
+    }
+
     /* Animación para el fade in */
     @keyframes fadeInUp {
       0% {opacity: 0; transform: translateY(30px);}
@@ -65,6 +73,10 @@
 </head>
 <body>
   <section class="aetheris-group">
+    <!-- Logo aquí -->
+    <img class="logo" src="https://i.postimg.cc/5yHKWmsB/242-sin-t-tulo-20250726120840.png" alt="Aetheris Group Logo" />
+
+    <!-- Título -->
     <h1>Aetheris Group</h1>
   </section>
 </body>
