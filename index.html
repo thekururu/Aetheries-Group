@@ -5,79 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aetheris Group</title>
   <style>
-    /* Estilo global */
+    :root {
+      --color-title: #00bfff;
+      --color-text: #e0f7fa;
+      --color-bg: #0a0a23;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #e0f7fa;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      background-color: #121a2a;
-    }
 
-    /* Estilo para Aetheris Group */
-    .aetheris-group {
+    body {
+      font-family: var(--font-main);
+      background-color: var(--color-bg);
+      color: var(--color-text);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Ocupa toda la altura de la ventana */
-      background: url('https://images.unsplash.com/photo-1565644747-3964b7d3177e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA2OXwwfDF8c2VhcmNofDExfHxzcGFjZXxlbnwwfHx8fDE2ODc4MjI4Nzc&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
-      background-size: cover;
-      color: #e0f7fa;
+      min-height: 100vh;
       text-align: center;
-      padding: 0 1rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    .aetheris-group h1 {
-      font-size: 5rem;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: 900;
-      background: linear-gradient(45deg, #8a2be2, #00bfff); /* De morado a azul */
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 30px rgba(138, 43, 226, 0.8);
-      letter-spacing: 0.2rem;
-      animation: fadeInUp 1.5s ease-out;
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://images.unsplash.com/photo-1447433819943-74a20887a2a6?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      filter: brightness(0.3) blur(2px);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: var(--color-title);
+      text-shadow: 0 0 15px var(--color-title);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #a3f0e8;
     }
 
     .logo {
-      margin-bottom: 30px; /* Espacio entre el logo y el título */
-      width: 150px; /* Tamaño del logo */
+      width: 180px;
       height: auto;
-      animation: fadeInUp 2s ease-out; /* Animación del logo */
+      margin-top: 1rem;
+      animation: floatLogo 4s ease-in-out infinite;
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
     }
 
-    /* Animación para el fade in */
-    @keyframes fadeInUp {
-      0% {opacity: 0; transform: translateY(30px);}
-      100% {opacity: 1; transform: translateY(0);}
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px var(--color-title), 0 0 20px var(--color-title);
+      }
+      50% {
+        text-shadow: 0 0 25px #1ecfff, 0 0 50px #1ecfff;
+      }
     }
 
-    /* Estilo de texto cuando se hace hover */
-    .aetheris-group h1:hover {
-      color: #ffcc00; /* Color dorado al pasar el mouse */
-      text-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+    @keyframes floatLogo {
+      0%, 100% { 
+        transform: translateY(0); 
+      }
+      50% { 
+        transform: translateY(-20px); 
+      }
     }
-
   </style>
 </head>
 <body>
-  <section class="aetheris-group">
-    <!-- Logo de Quasar ilustrado (utiliza la URL de una imagen de dibujo de quasar) -->
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Quasar_illustration.svg" alt="Quasar Logo Dibujo" />
-
-    <!-- Título -->
-    <h1>Aetheris Group</h1>
-  </section>
+  <h1 class="logo-effect">Aetheris Group</h1>
+  <img src="https://cdn.discordapp.com/attachments/1399889107559125075/1400935295473684541/54_sin_t_tulo_20250801141553.png?ex=688e722a&is=688d20aa&hm=30ac7fe894c3b33d5f1bea34408bb55db242bb3058021a34e532c75bdc5c1aab&" alt="Logo de Aetheris Group" class="logo"/>
+  <p>Explorando nuevas fronteras en tecnología, innovación y comunidad. Conquista el universo con nosotros.</p>
 </body>
 </html>
