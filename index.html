@@ -29,7 +29,7 @@
       min-height: 100vh;
       text-align: center;
       position: relative;
-      overflow: hidden;
+      overflow: auto;
     }
 
     body::before {
@@ -43,23 +43,23 @@
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 7rem;
       color: var(--color-title);
       text-shadow: 0 0 15px var(--color-title);
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 2.5rem;
       max-width: 700px;
       color: #a3f0e8;
     }
 
     .logo {
-      width: 180px;
-      height: 180px;
+      width: 450px;
+      height: 450px;
       margin-top: 1rem;
-      border-radius: 50%;  /* Esto hace que el logo sea redondo */
+      border-radius: 50%;
       animation: floatLogo 4s ease-in-out infinite;
       box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
     }
@@ -72,19 +72,153 @@
         transform: translateY(-20px); 
       }
     }
+
+    .story-container {
+      text-align: left;
+      margin-top: 50px;
+      width: 90%;
+      max-width: 1000px;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .story-container h2 {
+      font-size: 2rem;
+      color: var(--color-title);
+      margin-bottom: 20px;
+    }
+
+    .story-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #a3f0e8;
+    }
+
+    .companies-container {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .company-block {
+      display: flex;
+      align-items: center;
+      background-color: #0d1b2a;
+      color: white;
+      width: 800px;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 12px #00ffff33;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .company-block:hover {
+      transform: scale(1.05);
+    }
+
+    .company-block img {
+      width: 150px;
+      height: auto;
+      margin-right: 30px;
+    }
+
+    .company-block div h2 {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      font-size: 32px;
+      color: white;
+    }
+
+    .company-block div p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #aeeeff;
+    }
+
   </style>
 </head>
 <body>
-  <h1 class="logo-effect">Aetheris Group</h1>
+  <!-- Título y logo de Aetheris Group -->
+  <h1>Aetheris Group</h1>
   <img src="https://i.postimg.cc/WpS6mx0n/aetheris.png" alt="Logo de Aetheris Group" class="logo"/>
-  <p>Explorando nuevas fronteras en tecnología, innovación y comunidad. Conquista el universo con nosotros.</p>
+  <p>Explora el cosmos con nosotros</p>
+
+  <!-- Historia de la fundación de Aetheris Group -->
+  <div class="story-container">
+    <h2>La Creación de Aetheris Group: El Nacimiento de un Imperio Espacial</h2>
+    <p><strong>2025: El Origen de Aetheris Group</strong></p>
+    <p>En 2025, <strong>Thekuruku</strong>, el dueño de <strong>NovaSpace</strong>, estaba harto. Harto de las guerras y conflictos constantes que se desataban en los servidores de Discord de <strong>Dynasty</strong>, donde las tensiones entre empresas y grupos rivales parecían no tener fin. El ambiente competitivo había dejado de ser constructivo y se estaba convirtiendo en una lucha destructiva que frenaba la innovación y el progreso de la industria espacial.</p>
+    <p>Después de meses de reflexión y frustración, <strong>Thekuruku</strong> tomó una decisión radical: era hora de cambiar las reglas del juego. En lugar de seguir luchando entre sí, decidió reunirse con los dueños de otras empresas clave en el sector y proponerles una alianza para crear algo completamente nuevo, una entidad que no estuviera limitada por viejas rivalidades ni conflictos personales. <strong>Aetheris Group</strong> nacía con una visión ambiciosa: <strong>unir fuerzas</strong> para impulsar la exploración espacial y la innovación sin las barreras de la competencia destructiva.</p>
+    <p>Los primeros en unirse a la idea fueron los líderes de <strong>NovaTech</strong>, <strong>G.A.C.</strong>, <strong>CosmicPioneers</strong>, <strong>Novax Aerospace</strong> y <strong>SpaceGalaxyInfinity</strong>. Juntos, en una serie de reuniones secretas y acuerdos estratégicos, decidieron fusionar sus esfuerzos para crear <strong>Aetheris Group</strong>, un conglomerado que integrara todas sus fuerzas bajo un solo techo, con el objetivo de transformar la industria aeroespacial global.</p>
+    <p><strong>Aetheris Group: Un Imperio Espacial Nace</strong></p>
+    <p>A través de <strong>Aetheris Group</strong>, las empresas fundadoras consolidaron sus recursos, conocimientos y tecnologías. Ya no había necesidad de pelear por el mismo territorio o las mismas metas; en su lugar, <strong>Aetheris</strong> se convertiría en un <strong>coloso del espacio</strong>, abordando todo, desde lanzamientos orbitales y colonización espacial hasta la creación de tecnologías de propulsión avanzada, satélites comerciales y estaciones espaciales privadas.</p>
+    <p>Con un liderazgo sólido y una visión compartida, <strong>Aetheris Group</strong> rápidamente se consolidó como la <strong>fuerza dominante</strong> en la industria espacial, dejando atrás los días de guerra y competencia interna para enfocarse en lo que realmente importaba: <strong>conquistar las estrellas</strong>.</p>
+    <p>La fundación de <strong>Aetheris</strong> fue el comienzo de una nueva era, donde la <strong>cooperación</strong> reemplazó a la confrontación, y el futuro de la humanidad en el espacio quedó al alcance de la mano.</p>
+  </div>
+
+  <!-- Bloque de Empresas en orden correcto -->
+  <div class="companies-container">
+    <!-- NovaSpace -->
+    <div class="company-block">
+      <img src="https://i.postimg.cc/KcCbvcYk/1000116041-removebg-preview.png" alt="Logo NovaSpace">
+      <div>
+        <h2>NovaSpace</h2>
+        <p>Pioneros en las idas al espacio, intenta hacer el espacio para todos</p>
+      </div>
+    </div>
+
+    <!-- NovaTech -->
+    <div class="company-block">
+      <img src="https://i.postimg.cc/HxdQ5D3L/image.png" alt="Logo NovaTech">
+      <div>
+        <h2>NovaTech</h2>
+        <p>Pioneros en los lanzamientos espaciales en América Latina</p>
+      </div>
+    </div>
+
+    <!-- G.A.C. -->
+    <div class="company-block">
+      <img src="https://i.postimg.cc/PrYVmhQW/image.png" alt="Logo G.A.C.">
+      <div>
+        <h2>G.A.C.</h2>
+        <p>Innovación y desarrollo de tecnologías aeroespaciales</p>
+      </div>
+    </div>
+
+    <!-- CosmicPioneers -->
+    <div class="company-block">
+      <img src="https://i.postimg.cc/qRHz6sJX/image.png" alt="Logo CosmicPioneers">
+      <div>
+        <h2>CosmicPioneers</h2>
+        <p>Una empresa que llegó con la fusión de CosmicFrontir y Space Pioneers</p>
+      </div>
+    </div>
+
+    <!-- Novax Aerospace -->
+    <div class="company-block">
+      <img src="https://i.postimg.cc/6Qn1hKKJ/image.png" alt="Logo Novax Aerospace">
+      <div>
+        <h2>Novax Aerospace</h2>
+        <p>Es una empresa aeroespacial con sede en Rocha, Uruguay, fundada en 2009</p>
+      </div>
+    </div>
+
+    <!-- SpaceGalaxyInfinity -->
+    <div class="company-block">
+      <img src="https://i.postimg.cc/YqSq0rKS/image.png" alt="Logo SpaceGalaxyInfinity">
+      <div>
+        <h2>SpaceGalaxyInfinity</h2>
+        <p>En Space Galaxy Infinity nos especializamos en el diseño, venta y operación de tecnología espacial</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-<div style="display: flex; align-items: center; background-color: #0d1b2a; color: white; width: 800px; padding: 30px; margin-top: 100px; border-radius: 15px; box-shadow: 0 0 12px #00ffff33;">
-  <img src="https://i.postimg.cc/KcCbvcYk/1000116041-removebg-preview.png" alt="Logo NovaSpace" style="width: 150px; height: auto; margin-right: 30px;">
-  <div>
-    <h2 style="margin: 0; font-family: 'Georgia', serif; font-size: 32px; color: white;">NovaSpace</h2>
-    <p style="margin-top: 10px; font-size: 18px; color: #aeeeff;">Pioneros en las idas al espacio, intenta hacer el espacio para todos</p>
-  </div>
-</div>
 
